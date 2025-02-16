@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-body">
+            <h1>User Counter</h1>
+            <h2 id="title">0</h2>
+            <div class="card-btn">
+                <button id="decrement">-</button>
+                <button id="reset">Reset</button>
+                <button id="increment">+</button>
+                <button id="save">Save</button>
+            </div>
+            <div id="saved-container">
+                <h3>Saved Values</h3>
+                <ul id="savedList"></ul>
+                <h3 id="totalSum">Total Sum: 0</h3>
+                <button id="clearSaved">Clear Saved Data</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
