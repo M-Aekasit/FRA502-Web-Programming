@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: #081b29;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0f4ce6;
+}
+
+.home {
+    height: 100vh;
+    background: url("../images/crystal-textured-background.avif") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f4ce6;
+}
+
+.home-content p {
+    font-size: 16px;
+    max-width: 445px;
+    margin: 20px 0 30px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-box {
+    border: none;
+    background: #e8eefb;
+    border-radius: 14px;
+    /* font-family: poppins; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.btn-box:hover {
+    background-color: #e8eefb;
+    scale: 1.1;
+}
+
+.btn-box a {
+    text-decoration: none;
+    color: #0f4ce6;
+}
+
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #081b29;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #081b29;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #bad0ff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-sci a:hover::before {
+    transform: scale(1);
+}
+
+.animated-box {
+    width: 50px;
+    height: 50px;
+    background-color: #bad0ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+.home-img {
+    position: relative;
+}
+
+.home-img img {
+    width: none;
+    height: 650px;
+    object-fit: cover;
+    box-shadow: none;
+    border-radius: 0;
+    position: absolute;
+    bottom: -448px;
+    right: -700px;
+}
+
+.digitalocean {
+    width: 50px;
+    aspect-ratio: 1;
+    background:
+        repeating-conic-gradient(at 46% 46%, #0000 0 25%, #0f4ce6 0 50%) 5% 94%/27.5% 27.5% no-repeat,
+        conic-gradient(#0f4ce6 0 0) 38.5% 76.5%/19% 19% no-repeat,
+        radial-gradient(100% 100% at 0 0, #0000 60%, #0f4ce6 61% 99%, #0000) 100% 100%/50% 50% no-repeat,
+        radial-gradient(50% 100% at 50% 100%, #0000 60%, #0f4ce6 61% 99%, #0000) top/100% 50% no-repeat;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    z-index: 10;
+}

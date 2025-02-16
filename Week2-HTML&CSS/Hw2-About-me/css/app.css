@@ -1,0 +1,68 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+footer {
+    color: #dc0a0a;
+}
+
+footer span {
+    color: rgb(11, 230, 66);
+    /*font-weight: bold;*/
+}
+
+.view {
+    width: 200px;
+    height: 200px;
+    perspective: 300px;
+    position: fixed;
+    bottom: 0;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg) translateX(50px) translateY(50px);
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 10px;
+    backface-visibility: visible;
+    text-align: center;
+    line-height: 100px;
+}
+
+.front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
