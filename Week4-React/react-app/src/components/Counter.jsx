@@ -1,7 +1,6 @@
 import { useState } from "react";
 import MenCounter from "./MenCounter";
 import WomenCounter from "./WomenCounter";
-// import "./Counter.css";
 
 const Counter = () => {
   const [men, setMen] = useState(0);
@@ -23,7 +22,7 @@ const Counter = () => {
     setWomen(0);
   };
 
-  const handleClearHistory = () => setHistory([]); // ปุ่มล้าง History
+  const handleClearHistory = () => setHistory([]); 
 
   return (
     <div className="counter-container">
