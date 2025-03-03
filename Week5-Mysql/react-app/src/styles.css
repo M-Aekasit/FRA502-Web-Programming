@@ -1,0 +1,169 @@
+/* MenCounter.css */
+.men-counter {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  text-align: center;
+}
+
+.men-counter h2 {
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.men-counter p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.up-button {
+  background-color: #10b981;
+}
+
+.down-button {
+  background-color: #ef4444;
+}
+
+/* WomenCounter.css */
+.women-counter {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  text-align: center;
+}
+
+.women-counter h2 {
+  color: #ec4899;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.women-counter p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.up-button {
+  background-color: #10b981;
+}
+
+.down-button {
+  background-color: #ef4444;
+}
+
+/* Counter.css */
+.counter-container {
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: fit-content;
+  margin: 150px auto;
+}
+
+.counter-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.save-button {
+  background-color: #3b82f6;
+}
+
+.reset-button {
+  background-color: #6b7280;
+  margin-left: 12px;
+}
+
+.clear-button {
+  background: rgb(255, 194, 81);
+  margin-left: 12px;
+}
+
+.history-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  text-align: center;
+  max-height: 200px;
+  /* กำหนดความสูงให้มี Scroll */
+  overflow-y: auto;
+  /* เพิ่ม Scroll เมื่อข้อมูลเยอะ */
+}
+
+.history-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.history-scroll {
+  max-height: 150px;
+  /* จำกัดความสูงภายใน History */
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.history-item {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.no-records-yet {
+  font-size: 14px;
+  color: #777;
+}
